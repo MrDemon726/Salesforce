@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="dyanmicContactForm">
+    <apiVersion>58.0</apiVersion> 
+    <isExposed>true</isExposed>
+
+    <!-- Define where this component can be used -->
+    <targets>
+        <target>lightning__AppPage</target>  <!-- Lightning App Page -->
+        <target>lightning__RecordPage</target>  <!-- Lightning Record Page -->
+        <target>lightning__HomePage</target>  <!-- Lightning Home Page -->
+        <target>lightningCommunity__Page</target>  <!-- Experience Cloud (Community) -->
+    </targets>
+
+    <!-- Target Configs for Lightning Pages (App, Home, Record) -->
+
+</LightningComponentBundle>

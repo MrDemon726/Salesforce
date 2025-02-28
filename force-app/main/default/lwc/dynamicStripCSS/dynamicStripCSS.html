@@ -1,0 +1,17 @@
+<template>
+    <div class="container">
+        <p>Progress Bar with Circular Check (Vertical)</p>
+
+        <div class="progress-container">
+            <!-- Circular Check Mark -->
+            <div class="check-circle" style={checkStyle}>
+                &#10003; <!-- Unicode checkmark -->
+            </div>
+
+            <!-- Vertical Progress Bar -->
+            <div class="progress-bar-wrapper">
+                <lightning-progress-bar value={progressValue} size="large"></lightning-progress-bar>
+            </div>
+        </div>
+    </div>
+</template>

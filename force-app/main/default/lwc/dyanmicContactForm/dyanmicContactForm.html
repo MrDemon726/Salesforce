@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Contact Form" icon-name="standard:contact">
+        <div class="slds-p-around_medium">
+            <template for:each={fields} for:item="field">
+                <lightning-input 
+                    key={field.apiName} 
+                    label={field.label} 
+                    name={field.apiName} 
+                    type={field.type} 
+                    value={field.value} 
+                    onchange={handleChange} 
+                    required={field.required}
+                    disabled={field.disabled}>
+                </lightning-input>
+            </template>
+
+            <div class="rating">
+                <span class="star" data-value="1" onclick={handleRating}>★</span>
+                <span class="star" data-value="2" onclick={handleRating}>★</span>
+                <span class="star" data-value="3" onclick={handleRating}>★</span>
+                <span class="star" data-value="4" onclick={handleRating}>★</span>
+                <span class="star" data-value="5" onclick={handleRating}>★</span>
+            </div>
+
+            <lightning-button label="Submit" variant="brand" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

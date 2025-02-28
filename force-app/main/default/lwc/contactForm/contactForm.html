@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Contact Form">
+        <template if:true={fields.length}>
+            <template for:each={fields} for:item="field">
+                <lightning-input key={field.apiName}
+                                 data-name={field.apiName}
+                                 label={field.label}
+                                 required={field.isRequired}
+                                 onchange={handleChange}>
+                </lightning-input>
+            </template>
+            <lightning-button label="Submit" onclick={handleSubmit} class="slds-m-top_medium"></lightning-button>
+        </template>
+    </lightning-card>
+</template>

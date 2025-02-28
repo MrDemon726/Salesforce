@@ -1,0 +1,7 @@
+@import 'c/odDatatableCSSLibrary';
+
+.container {
+  min-height: 2vh;
+  display: flex;
+  align-items: center;
+}
